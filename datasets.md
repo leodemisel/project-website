@@ -1,8 +1,7 @@
 ---
 layout: page
+title: Our Datasets
 ---
-
-## Our Datasets
 
 * [CMU movie summary corpus](https://www.cs.cmu.edu/~ark/personas/) the chosen dataset for the project, containing plot summaries, movie box office revenue, genre, release date, runtime, language and character/actor information.
 * [The Movies Dataset](https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset?resource=download&select=movies_metadata.csv) from Kaggle : This dataset’s content is very similar to the CMU dataset’s, which here works to our advantage because we used to complete missing data in our dataset. This allows us to work with a more robust dataset and broaden the scope of our analysis.
