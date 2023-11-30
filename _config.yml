@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+remote_theme: daattali/beautiful-jekyll@6.0.1
 title: Movies in time
 description: A template website for ADA
 show_downloads: True
