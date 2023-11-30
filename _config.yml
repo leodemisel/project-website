@@ -8,5 +8,5 @@ description: Our project website
 navbar-links:
   example: "example"
 
-  social-network-links:
-  email: "leo.sperber@epfl.ch"
+social-network-links:
+email: "leo.sperber@epfl.ch"
