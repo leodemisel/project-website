@@ -1,6 +1,10 @@
 ---
 layout: page
 title: Movies in time
+cover-img: /assets/img/time.png
+thumbnail-img: /assets/img/time.png
+share-img: /assets/img/time.png
+
 ---
 
 ## Introduction
