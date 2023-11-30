@@ -10,3 +10,6 @@ navbar-links:
 
 social-network-links:
 email: "leo.sperber@epfl.ch"
+
+exclude:
+  README.md
