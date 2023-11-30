@@ -1,5 +1,6 @@
 # ADA Template Website
 ## Usage
+test
 1. Fork (copy) this repository by clicking the "Fork" button on the top right corner.
 2. Go to "Settings" -> "Pages" in your forked repository. Under "Branch" change "None" to "master" and click "Save".
 3. Edit the `_config.yml` file in your forked repository to change the site title (after `title:`) and description (after `description:`).
