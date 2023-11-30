@@ -1,9 +1,12 @@
 remote_theme: daattali/beautiful-jekyll@6.0.1
 title: Movies in time
-description: A template website for ADA
-show_downloads: True
-navigation:
-  - title: Home
-    url: /
-  - title: Example
-    url: example.md
+author: Haoyu Wen, Florian Delavy, Robin Patriarca, Leo Sperber
+
+description: Our project website
+
+
+navbar-links:
+  example: "example"
+
+  social-network-links:
+  email: "leo.sperber@epfl.ch"
