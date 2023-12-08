@@ -17,5 +17,4 @@ that the producers know it, and exploit it. Our goal is to show how us simple cr
 strategies movie studios use to benefit from this bias, whether it's expressed within a month, a year, a decade or a lifetime. To this end, we need to ask ourselves 
 a couple of questions. 
 
-
-# Ordinary least square
+<iframe src="assets/plots/movie_world_map.html">Genre plot</iframe>
