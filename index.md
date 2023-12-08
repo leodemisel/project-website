@@ -17,5 +17,6 @@ that the producers know it, and exploit it. Our goal is to show how us simple cr
 strategies movie studios use to benefit from this bias, whether it's expressed within a month, a year, a decade or a lifetime. To this end, we need to ask ourselves 
 a couple of questions. 
 
+---
 
-<iframe src="assets/plots/movie_world_map.html" width="750px" height="530px" frameborder="0" position="relative">Genre plot</iframe>
+<iframe src="animated_choropleth_plot.html" width="800" height="600"></iframe>
