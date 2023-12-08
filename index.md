@@ -21,4 +21,4 @@ a couple of questions.
 
 {% include movie_world_map.html %}
 
-<img src="/assets/img/n_movie_per_day.png" alt="Image Description">
+![Image Description](/assets/img/n_movie_per_day.png)
