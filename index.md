@@ -18,4 +18,4 @@ strategies movie studios use to benefit from this bias, whether it's expressed w
 a couple of questions. 
 
 
-# haoyu
+# Ordinary least square
