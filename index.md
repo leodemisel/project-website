@@ -16,3 +16,6 @@ and what better context than time itself. We think that there are some correlati
 that the producers know it, and exploit it. Our goal is to show how us simple creatures are influenced by time in our perception of movies, and what are the 
 strategies movie studios use to benefit from this bias, whether it's expressed within a month, a year, a decade or a lifetime. To this end, we need to ask ourselves 
 a couple of questions. 
+
+
+# haoyu
