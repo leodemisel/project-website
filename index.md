@@ -19,4 +19,4 @@ a couple of questions.
 
 ---
 
-<iframe src="animated_choropleth_plot.html" width="100%" height="600"></iframe>
+<iframe src="assets/plots/movie_world_map.html" width="100%" height="600"></iframe>
