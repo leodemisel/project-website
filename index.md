@@ -26,4 +26,3 @@ a couple of questions.
 {% test.html %}
 
 
-{% dynamic_model_code_in_41.html %}
