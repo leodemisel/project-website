@@ -31,7 +31,7 @@ a couple of questions.
 In this part, we're trying to figure out the ideal release date for movies that ensure the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
 
 Our primary method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
-$$Y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_{11}x_{11}$$
+$$ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_{11} x_{11} $$
 
 $Y$ = Box office \
 $X$ = Dummies variable of release month (Note: here we use December as a benchmark)
