@@ -22,3 +22,5 @@ a couple of questions.
 {% include movie_world_map.html %}
 
 ![A great image](/assets/img/n_movie_per_day.png)
+
+{% dynamic_model_code_in_41.html}
