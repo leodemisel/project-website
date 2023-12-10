@@ -23,7 +23,7 @@ a couple of questions.
 
 ![A great image](/assets/img/n_movie_per_day.png)
 
-{% test.html %}
+
 
 
 
