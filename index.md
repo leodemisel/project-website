@@ -25,5 +25,35 @@ a couple of questions.
 
 
 
-{% include test.html %}
+## Best Relase date analysis
+
+
+In this part, we're trying to figure out the ideal release date for movies that ensures the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
+
+Our primary method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
+$$Y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_{11}x_{11}$$
+
+$Y$ = Box office \
+$X$ = Dummies variable of release month (Note: here we use December as bench mark)
+
+![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.42.png)
+
+
+### Instructions of the dynamic model above
+The value of blue bars is the coefficient value of $\beta_0,\beta_1,\beta_2,...\beta_{11}$, which is referred to the left-sided y-axis.\
+The value of orange points is the t-value each of corresponding coefficient, which is referred to the right-sided y-axis.\
+The value of red line (1.96) is used to check the significant of the coefficient under 95% confidence, which is referred to the right-sided y-axis. (e.g. if the t-value stay outside the interval [-1.96,1.96], then the corresponding coefficient is significant)
+
+### Identifying the Best Month
+After conducting regression for all 87 countries from 1897 to 2012, we observed that June consistently yields a significantly higher average Box Office compared to other months. This pattern persists when we perform the same analysis for countries with over 200 data points during the same period. However, the best month varies for specific countries; for the US and Germany, it's still June, but for the UK and France, it is July. Notably, the coefficients for Canada and Korea aren't significant, suggesting they don't offer valuable insights.
+Our initial assumption is that June and July are generally the best release months for generating higher box office returns.
+
+### Genre-Specific Analysis
+We expand investigation to different genres while still using data from all 87 countries from 1897 to 2012, finding that most genres, such as Drama, Comedy, and Romance films, support our hypothesis that June and July are optimal release months. However, certain genres like Black-and-white films defy this trend, possibly due to their 'old school' nature, making them different from typical movies.
+
+Then we try to find the best week during the month.
+
+![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.59.png)
+
+
 
