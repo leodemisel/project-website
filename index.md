@@ -25,16 +25,16 @@ a couple of questions.
 
 
 
-## Best Relase date analysis
+## Best Release date analysis
 
 
-In this part, we're trying to figure out the ideal release date for movies that ensures the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
+In this part, we're trying to figure out the ideal release date for movies that ensure the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
 
 Our primary method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
 $$Y = \beta_0 + \beta_1x_1 + \beta_2x_2 + ... + \beta_{11}x_{11}$$
 
 $Y$ = Box office \
-$X$ = Dummies variable of release month (Note: here we use December as bench mark)
+$X$ = Dummies variable of release month (Note: here we use December as a benchmark)
 
 ![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.42.png)
 
@@ -54,6 +54,11 @@ We expand investigation to different genres while still using data from all 87 c
 Then we try to find the best week during the month.
 
 ![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.59.png)
+
+### Identifying the Best Week
+In our study of weeks, we take week 52 as a benchmark. We regress the box office on dummies variable of the weeks across 87 countries from 1897 to 2012. Interestingly, weeks 20, 21, and 23-30 consistently show higher box office figures compared to other months, on average. Notably, weeks 23-26 correspond to June, and weeks 27-31 correspond to July.
+
+Our regression analysis of 'box-office and week' supports our initial assumption and aligns with patterns observed in our monthly research. It's worth mentioning that the end of May (week 20, 21) and the middle of November and December (week 46, 50) also emerge as promising periods for successful box office releases.
 
 
 
