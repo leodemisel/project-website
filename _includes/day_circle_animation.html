@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Day Circle Animation</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+</head>
+<body>
+    <button id="toggle-animation" style="background-color: #f8f8f8; border: none; color: #888; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer;">Stop/Start</button>
+    <div style="display: flex;">
+        <canvas id="day-circle-animation" width="600" height="500" style="margin-right: 10px;"></canvas>
+        <svg id="legend" width="130" height="500"></svg>
+    </div>
+
+    <script>
+        const canvas = d3.select('#day-circle-animation').node();
+    const context = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    const radius = Math.min(width, height) / 2 - 10;
+    const days = d3.range(1, 366);
+    const xScale = d3.scaleLinear().domain([1, 365]).range([0, width]);
+    const yScale = d3.scaleLinear().domain([1, 365]).range([height / 2, height / 2]);
+    const angleScale = d3.scaleLinear().domain([1, 365]).range([0, 2 * Math.PI]);
+  
+    const colors = ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#9400D3", "#8B0000", "#FFA500", "#808000", "#008000", "#000080"];
+    const colorScale = d3.scaleQuantize().domain([1, 365]).range(colors);
+
+    
+  
+    function drawPoints(t) {
+        context.clearRect(0, 0, width, height);
+        days.forEach((d, i) => {
+            context.fillStyle = colorScale(d);
+            const angle = angleScale(d) - Math.PI / 2;
+            const r = radius * t;
+            const x = xScale(d) * (1 - t) + (width / 2 + r * Math.cos(angle)) * t;
+            const y = yScale(d) * (1 - t) + (height / 2 + r * Math.sin(angle)) * t;
+            context.beginPath();
+            context.arc(x, y, 2, 0, 2 * Math.PI);
+            context.fill();
+
+            // Draw the text for the first and last day of the year
+            if (i === 15 || i === days.length - 15) {
+                context.font = '12px Arial';
+                context.textAlign = 'center';
+                context.textBaseline = 'middle';
+                context.fillStyle = 'black';
+                context.fillText(i === 15 ? 'January' : 'December', x, y + 15);  // Adjust the y position to place the text above the dot
+            }
+        });
+    }
+
+
+        let direction = 1;
+        let t = 0;
+        let pause = false;
+        let intervalId;
+
+        function startAnimation() {
+            intervalId = d3.interval((elapsed) => {
+                if (pause) return;
+                if (t <= 0 && direction === -1) {
+                    pause = true;
+                    setTimeout(() => { pause = false; direction = 1; }, 2000); 
+                } else if (t >= 1 && direction === 1) {
+                    pause = true;
+                    setTimeout(() => { pause = false; direction = -1; }, 2000);
+                } 
+                t += 0.01 * direction; 
+                drawPoints(t);
+            }, 20);
+        }
+
+        startAnimation();
+
+        d3.select('#toggle-animation').on('click', () => {
+            if (intervalId) {
+                intervalId.stop();
+                intervalId = null;
+            } else {
+                startAnimation();
+            }
+        });
+
+        // Define the months
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        // Select the SVG element
+        const svg = d3.select('#legend');
+
+        // Create a group for each month
+        const groups = svg.selectAll('g')
+            .data(months)
+            .enter()
+            .append('g')
+            .attr('transform', (d, i) => `translate(0, ${i * 30})`); // Adjust the vertical position
+
+        // Draw the color rectangles
+        groups.append('rect')
+            .attr('width', 20)
+            .attr('height', 20)
+            .attr('fill', (d, i) => colors[i]);
+
+        // Add the text labels
+        groups.append('text')
+            .attr('x', 30)
+            .attr('y', 15)
+            .text(d => d);
+    </script>
+</body>
+</html>
