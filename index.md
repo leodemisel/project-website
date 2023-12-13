@@ -63,22 +63,36 @@ Our regression analysis of 'box-office and week' supports our initial assumption
 ## Oscar analysis
 
 
+
+
 The choice of release date made by moviemakers are not always based on making money. Sometimes, they are based on prestige, so that they can make a lot of money at a later date. In the movie industry, this prestige is materialized by the ultimate recognition : an Oscar. It is known that the submission deadline to win an Oscar is usually around the end of the year. Furthermore, it is said that the Oscar season, ranging from October to December, is the season where moviemakers release their movies that are the most likely to win an Oscar. In this chapter, we will try to investigate the effect of Oscar season.
+
+
 
 
 As a stater, we will look at the distribution of Oscar over the years.
 
 
+
+
 {% include oscar_graph.html %}
+
+
 
 
 As we can see on the above figure, there seem to be a clear trend of more Oscar being won by the end of the year. The trend seems rather consistent over the years, which can be explained by the fact that almost all Oscar ceremonies took place between February and April. It would be simple to say that if a moviemaker wants to win an Oscar, they have to release it between October and December, but let's not be ADAmant about that thought and conduct a deeper analysis. Having observed this supposed effect, the next natural question is : do movies make more Oscars when they are released at the end of the year because that's when the best movies are released ?
 
 
+
+
 As we will see from our data, the answer is probably not. At least, we can say that they are not quality perceived by the public that make these movies better than movies released the rest of the year.
 
 
+
+
 To begin our analysis, we start by comparing the effect of releases in all four quarters of the year on the amount of Oscar won. For each period, we need to make a propensity score matching based on relevant covariates. The table below summarizes those covariates.
+
+
 
 
 | Relevant Covariate        | Description                                      |
@@ -89,7 +103,11 @@ To begin our analysis, we start by comparing the effect of releases in all four 
 | Countries        | The countries where the movie was released    |
 
 
+
+
 After doing the matching on those covariates, we will verify that the following covariates are well distributed with a simple standardized mean difference test. We decided not to match on the rating, because it is not a cause of the movie's success, but a consequence of it. However, checking the distribution of the ratings is a good indicator of what the public thought of the movie. Indeed, it is possible that movies released during the Oscar season have the same budget as movies released during other seasons, but with a different kind of storytelling quality. We think that the ratings could be a variable that indicates the work put on the script, as voting people are usually more implicated and will be more critical of bad stories.
+
+
 
 
 | Covariate To Check       | Description                                      |
@@ -98,46 +116,99 @@ After doing the matching on those covariates, we will verify that the following 
 | Movie budget    | The year when the movie was released              |
 
 
+
+
 We report that for each of the following matching, the two covariate on the table above passed the standardized mean difference test. This is an indication that the quality and budget of movies is consistent all year round. Because of that, we can affirm that every result we found on the impact of season on number of Oscars won is probably a real effect of the season.
+
+
 
 
 The figure below shows the different periods of movie releases. To add to that, all clusters have statistics about the effect of that cluster's period on the number of Oscars won.
 
 
+
+
 {% include kmeans_clusters_equal.html %}
+
+
 
 
 As we see on the figure above, none of the season's effects on the number of Oscars won are statistically significant. However, looking at the data, there seems to be an effect anyway. In addition to that, the last season has a p-value of 0.06, which is too big to be statistically significant, but is a solid clue that there is more at play here.
 
 
+
+
 To deepen the analysis, we will try to find better seasons than just the four quarters of the year. For that, we use the K-means algorithm with K=4. Since the goal is to get clear separation dates for our data, we will simply cluster the movies that won an Oscar based on their release date. Such a clustering gives us slightly different seasons, but a high impact on the results.
+
+
 
 
 {% include kmeans_clusters_normal.html %}
 
 
+
+
 As a reminder, the movies released in all clusters have a balanced distribution of rating as well as budget. The figure above shows that the beginning of the year is a bad time to release a movie if the goal is to get some Oscars. With an intercept of 0.17 and an effect size of -0.06, the impact is far from negligible. However, the more surprising result is the end of the year, which shows an effect size of 0.13 on an intercept of 0.17. This means that the average number of Oscars won during that period is almost twice as much as during the rest of the year, with variables like budget, country, genre and release year controlled.
+
+
 
 
 To conclude this analysis, we note that our K-means algorithm has considered dates like 31 of December to be far away from 01 January, even though it is just one day apart. It is possible that a good clustering ends on the last day of December because the industry is based on human activities. However, to make sure that this is the case, we need a clustering that doesn't have to consider December and January as far apart. For that, we transform the days of the year, as illustrated in the following animation.
 
 
+
+
 {% include day_circle_animation.html %}
+
+
 
 
 With this new paradigm, we can reconsider a K-means clustering based on the coordinates of the days of the year on a unit circle. When applying the same algorithm used for the other clusters, this is what we get.
 
 
+
+
 {% include kmeans_clusters_circular.html %}
 
 
-The effect size of the last cluster is much smaller than it was on the previous analysis. Indeed, we have an effect size of 0.08 on an intercept of 0.17. This means that adding those January days to the cluster only diminishes the effect. Therefore, there is a strong disconnect between December and January for the prospect of winning Oscars. We also note that the effect of the first cluster is very close to the first cluster in the previous analysis. In conclusion, it seems like Oscar season is the real deal, and moviemakers who want to win an Oscar has a strong incentive to release their movies towards the end of the year.
 
 
-But is it true for every genre ?
+The effect size of the last cluster is much smaller than it was on the previous analysis. Indeed, we have an effect size of 0.08 on an intercept of 0.17. This means that adding those January days to the cluster only diminishes the effect. Therefore, there is a strong disconnect between December and January for the prospect of winning Oscars. We also note that the effect of the first cluster is very close to the first cluster in the previous analysis. In conclusion, it seems like Oscar season is the real deal, and moviemakers who want to win an Oscar have a strong incentive to release their movies towards the end of the year.
+
+
+
+
+But is it true for every genre ? To figure it out, we analyze each genre separately. To interpret the figure below, we note that most movies have multiple genres, so most of them will appear in more than one category. Despite this, the figure is still useful to notice some patterns that we will analyze further.
 
 
 {% include kmeans_per_genre.html %}
+
+
+As we can see, the movies that are drama seem to contain most of the effects observed in the previous figures. The effect size of releasing a dramatic movie at the end of the year as well as at the beginning of the year is enormous.
+
+
+To finish this chapter, we look at the same figure with movies that are not drama. Surprisingly, there is no effect of releasing on the last cluster. The only cluster that has an impact is the second one, with a negative correlation.
+
+
+{% include kmeans_clusters_notDrama.html %}
+
+
+In conclusion, if it's October to December, to nab an Oscar, stage a drama ! If it's the beginning of the year, release nADA !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
