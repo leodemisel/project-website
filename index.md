@@ -34,10 +34,11 @@ Our primary method is regression analysis, examining if there's a connection bet
 
 $$ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_{11} x_{11} $$
 
+{% include oscar_graph.html %}
+
 Y = Box office \
 X = Dummies variable of release month (Note: here we use December as a benchmark)
 
-$a_1$
 
 ![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.42.png)
 
