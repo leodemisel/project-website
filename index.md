@@ -60,9 +60,9 @@ Continuing our regression from 1967 to 1976, during the New Hollywood wave of th
 
 
 ### Genre-Specific Analysis
-We expand investigation to different genres while still using data from all 87 countries from 1897 to 2012, finding that most genres, such as Drama, Comedy, and Romance films, support our hypothesis that June and July are optimal release months. However, certain genres like Black-and-white films defy this trend, possibly due to their 'old school' nature, making them different from typical movies.
-
-Then we try to find the best week during the month.
+We expand our exploration across various genres, maintaining a comprehensive dataset from all 87 countries and the years 1897 to 2012. Our findings reveal that most genres—drama, comedy, romance, thriller, crime, horror, musical, documentary, and mystery—support our hypothesis that June and July constitute optimal release months. However, certain outliers, such as black-and-white films, diverge from this trend. This deviation could be attributed to their 'old-school' nature, setting them apart from conventional movies. Additionally, action, adventure, and family films attained their highest box office earnings in May, deviating from the prevailing trend.
+Despite genre-specific variations, the overarching trend remains unchanged: Summer (May, June, July) and winter (November, December, January) persist as the most favourable release seasons.
+Further refining our analysis, we attempt to pinpoint the optimal week within a given month.
 
 ![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.59.png)
 
