@@ -48,6 +48,17 @@ The value of red line (1.96) is used to check the significant of the coefficient
 After conducting regression for all 87 countries from 1897 to 2012, we observed that June consistently yields a significantly higher average Box Office compared to other months. This pattern persists when we perform the same analysis for countries with over 200 data points during the same period. However, the best month varies for specific countries; for the US and Germany, it's still June, but for the UK and France, it is July. Notably, the coefficients for Canada and Korea aren't significant, suggesting they don't offer valuable insights.
 Our initial assumption is that June and July are generally the best release months for generating higher box office returns.
 
+
+Is June or July consistently the optimal release month? The answer is 'NO.' By conducting regression analysis across 87 countries from 1914 to 1938, we observe that December emerges as the most successful release month during this period. As we extend the time interval to 1980, the coefficient for June gradually increases, eventually surpassing that of December. However, it is worth noting that December-released movies maintained dominance at the highest box office for a long time.
+Further extending the analysis beyond 1980 reveals that the coefficients for May and July generally surpass that of December. Nevertheless, it remains evident that movies released in December consistently achieve higher box office success compared to those released in most other months.
+
+
+### History events analysis
+In this section, our analysis consistently encompasses data from all 87 countries. Notably, from 1914 to 1918, during World War I, the data available for analysis was limited. Then, we transferred our focus from 1929 to 1933, coinciding with the Great Depression. Here, our regression analysis reveals that November claims the crown for the best release month, with January as the second best. This suggests that during economic downturns, months preceding and following Christmas tend to yield better performance than other months.
+Moving on to the period from 1939 to 1945, corresponding to World War II, our analysis indicates that December maintains its status as the preferable release month. However, from 1945 to 1966, a period after the war and the rise of television in the 50s, the coefficient for December is not significantly higher than that of other months.
+Continuing our regression from 1967 to 1976, during the New Hollywood wave of the 60s and 70s, we observe that the June coefficient is close to that of December. This suggests a gradual shift in audience preferences towards the summer release months. Subsequently, we observe that high box office performers tend to concentrate predominantly on the summer and winter seasons.
+
+
 ### Genre-Specific Analysis
 We expand investigation to different genres while still using data from all 87 countries from 1897 to 2012, finding that most genres, such as Drama, Comedy, and Romance films, support our hypothesis that June and July are optimal release months. However, certain genres like Black-and-white films defy this trend, possibly due to their 'old school' nature, making them different from typical movies.
 
