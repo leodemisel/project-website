@@ -31,10 +31,13 @@ a couple of questions.
 In this part, we're trying to figure out the ideal release date for movies that ensure the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
 
 Our primary method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
+
 $$ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_{11} x_{11} $$
 
-$Y$ = Box office \
-$X$ = Dummies variable of release month (Note: here we use December as a benchmark)
+Y = Box office \
+X = Dummies variable of release month (Note: here we use December as a benchmark)
+
+$a_1$
 
 ![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.42.png)
 
@@ -67,9 +70,12 @@ Further refining our analysis, we attempt to pinpoint the optimal week within a 
 ![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.59.png)
 
 ### Identifying the Best Week
-In our study of weeks, we take week 52 as a benchmark. We regress the box office on dummies variable of the weeks across 87 countries from 1897 to 2012. Interestingly, weeks 20, 21, and 23-30 consistently show higher box office figures compared to other months, on average. Notably, weeks 23-26 correspond to June, and weeks 27-31 correspond to July.
+In our investigation into weekly trends, we designate week 52 as our benchmark and conduct regression analysis using dummy variables for weeks across 87 countries from 1897 to 2012. The exciting thing is that weeks 20, 21, and 23-30 consistently exhibit higher box office figures than other weeks, indicating an upward trend on average. Notably, weeks 23-26 align with June, and weeks 27-31 correspond to July.
+Weeks 46, 47, and 50 also perform well, coinciding with November and December midpoints, respectively.
+Our regression analysis, focusing on the relationship between box office performance and weeks, reinforces our initial assumption and reflects the trends observed in our monthly analysis. It reaffirms that summer is the premier release period for maximizing box office earnings, while winter is the second-best option.
 
-Our regression analysis of 'box-office and week' supports our initial assumption and aligns with patterns observed in our monthly research. It's worth mentioning that the end of May (week 20, 21) and the middle of November and December (week 46, 50) also emerge as promising periods for successful box office releases.
+
+
 
 ## Oscar analysis
 
