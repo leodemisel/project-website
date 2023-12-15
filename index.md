@@ -19,7 +19,38 @@ a couple of questions.
 
 ---
 
-{% include movie_world_map.html %}
+
+
+<select id="chartType">
+  <option value="year">Year</option>
+  <option value="month">Month</option>
+  <option value="day">Day</option>
+</select>
+
+<iframe class="toggle-frame" src="assets/plot/movie_world_map_year.html" width="750px" height="530px" frameborder="0" position="relative" id="year" style="display: block;"></iframe>
+<iframe class="toggle-frame" src="assets/plot/movie_world_map_month.html" width="750px" height="530px" frameborder="0" position="relative" id="month" style="display: none;"></iframe>
+<iframe class="toggle-frame" src="assets/plot/movie_world_map_day.html" width="750px" height="530px" frameborder="0" position="relative"  id="day" style="display: none;"></iframe>
+
+<script>
+  function showFrame(frameId) {
+  // Get all iframes with the toggle-frame class
+    var frames = document.getElementsByClassName('toggle-frame');
+  // Hide all iframes with the toggle-frame class
+    for (var i = 0; i < frames.length; i++) {
+      frames[i].style.display = 'none';
+    // Show the selected iframe
+    var frame = document.getElementById(frameId);
+    frame.style.display = 'block';
+    }
+  }
+
+  document.getElementById('chartType').addEventListener('change', function() {
+    showFrame(this.value)
+  });
+</script>
+
+
+
 
 ![A great image](/assets/img/n_movie_per_day.png)
 
