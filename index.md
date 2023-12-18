@@ -118,7 +118,34 @@ Weeks 46, 47, and 50 also perform well, coinciding with November and December mi
 Our regression analysis, focusing on the relationship between box office performance and weeks, reinforces our initial assumption and reflects the trends observed in our monthly analysis. It reaffirms that summer is the premier release period for maximizing box office earnings, while winter is the second-best option.
 
 
+## Box office analysis
 
+Now that we have an idea of the correlations between release month and box office, let's go deeper and try to find some causal link. To begin, we seperate the movies countries per country of production, and perform a propensity score matching on each country and for each month. The matching covariates will be the following,
+
+| Relevant Covariate        | Description                                      |
+|------------------|--------------------------------------------------|
+| Movie budget     | The financial resources allocated to a movie      |
+| Release year     | The year when the movie was released              |
+| Genre            | The genre of the movie                 |
+
+For a given month, each country will have a control group and a treatment group that will be similar on every variable expect for whether the movies were released that particular month. For the countries that didn't produce enough movies to perform that stasticial analysis, we simply define the effect size as the variation of the mean between the two groups, and the P-value as 1 (i.e. not statistically significant). 
+
+{% include release_month_box_office.html %}
+
+Wow, have you seen that graph ? it's amazing. 
+
+{% include release_month_box_office_genre.html %}
+
+OMG ! That one is even better
+
+
+{% include release_weekday_box_office.html %}
+
+Oh no he didn't....
+
+{% include release_week_box_office.html %}
+
+xoxo
 
 ## Oscar analysis
 
