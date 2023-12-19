@@ -85,7 +85,6 @@ Y = Box office \
 X = Dummies variable of release month (Note: here we use December as a benchmark)
 
 
-![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.42.png)
 
 {% include month_wen.html %}
 
@@ -114,7 +113,7 @@ We expand our exploration across various genres, maintaining a comprehensive dat
 Despite genre-specific variations, the overarching trend remains unchanged: Summer (May, June, July) and winter (November, December, January) persist as the most favourable release seasons.
 Further refining our analysis, we attempt to pinpoint the optimal week within a given month.
 
-![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.59.png)
+{% include week_wen.html %}
 
 ### Identifying the Best Week
 In our investigation into weekly trends, we designate week 52 as our benchmark and conduct regression analysis using dummy variables for weeks across 87 countries from 1897 to 2012. The exciting thing is that weeks 20, 21, and 23-30 consistently exhibit higher box office figures than other weeks, indicating an upward trend on average. Notably, weeks 23-26 align with June, and weeks 27-31 correspond to July.
