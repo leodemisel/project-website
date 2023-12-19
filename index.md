@@ -83,7 +83,7 @@ X = Dummies variable of release month (Note: here we use December as a benchmark
 
 ![A great image](/assets/img/Screenshot 2023-12-10 at 17.09.42.png)
 
-{% include animated_chart_wen_test.html.html %}
+{% include animated_chart_wen.html %}
 
 ### Instructions of the dynamic model above
 The value of blue bars is the coefficient value of $\beta_0,\beta_1,\beta_2,...\beta_{11}$, which is referred to the left-sided y-axis.\
