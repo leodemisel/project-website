@@ -24,12 +24,16 @@ a couple of questions.
 <select id="chartType">
   <option value="year">Year</option>
   <option value="month">Month</option>
+  <option value="week">Week</option>
   <option value="day">Day</option>
+  <option value="weekday">Weekday</option>
 </select>
 
 <iframe class="toggle-frame" src="assets/plot/movie_world_map_year.html" width="750px" height="530px" frameborder="0" position="relative" id="year" style="display: block;"></iframe>
 <iframe class="toggle-frame" src="assets/plot/movie_world_map_month.html" width="750px" height="530px" frameborder="0" position="relative" id="month" style="display: none;"></iframe>
+<iframe class="toggle-frame" src="assets/plot/movie_world_map_weeks.html" width="750px" height="530px" frameborder="0" position="relative"  id="week" style="display: none;"></iframe>
 <iframe class="toggle-frame" src="assets/plot/movie_world_map_day.html" width="750px" height="530px" frameborder="0" position="relative"  id="day" style="display: none;"></iframe>
+<iframe class="toggle-frame" src="assets/plot/movie_world_map_weekday.html" width="750px" height="530px" frameborder="0" position="relative"  id="weekday" style="display: none;"></iframe>
 
 <script>
   function showFrame(frameId) {

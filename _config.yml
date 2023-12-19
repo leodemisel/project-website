@@ -11,8 +11,6 @@ social-network-links:
 email: "leo.sperber@epfl.ch"
 
 markdown: kramdown
-kramdown:
-  parse_block_html: true
 
 exclude:
   README.md
