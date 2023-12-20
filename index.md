@@ -76,7 +76,7 @@ In this part, we're trying to figure out the ideal release date for movies that 
 
 Our main method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
 
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -92,13 +92,13 @@ Our main method is regression analysis, examining if there's a connection betwee
 
 \[ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_{11} x_{11} \]
 
-</body>
-</html>
 
 $Y$ = Box office \
 $X$ = Dummies variable of release month (Note: here we use December as a benchmark)
 
 
+</body>
+</html>
 
 
 
