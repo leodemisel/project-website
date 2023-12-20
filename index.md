@@ -95,7 +95,7 @@ X = Dummies variable of release month (Note: here we use December as a benchmark
 
 ### Introduction of the plot
 Note the value of the bars is the coefficient value of <math><mi>&#x03B2;</mi><sub>0</sub><mo>,</mo><mi>&#x03B2;</mi><sub>1</sub><mo>,</mo><mi>&#x03B2;</mi><sub>2</sub><mo>,</mo><mo>&#x2026;</mo><mi>&#x03B2;</mi><sub>11</sub></math>\
-When we move the animen
+When we move the animation frame, we will do the regression using the data from year 1914 to the year of the animation button.
 
 ### Identifying the Best Month
 After conducting regression for all 87 countries from 1897 to 2012, we can see that June consistently yields a significantly higher average Box Office compared to other months. 
