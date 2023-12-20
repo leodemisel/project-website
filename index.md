@@ -202,6 +202,8 @@ Wow, have you seen that graph ? it's amazing.
 
 ### Comprehensive Genre Analysis
 
+In this section, we'll explore how different movie genres are affected by monthly releases. Regarding Drama, it's not ideal to launch a movie in January, September, and October. Indie films, on the other hand, thrive when released in May and September, but the opposite holds for October. Comedy movies perform well with a June release but suffer at the box office if launched in August. As for Romance films, June is an ideal release month, but it's not recommended for September and October. Yet, disregarding the statistical significance, it becomes evident that all data points exhibit positive effect_sizes for June and July.
+
 {% include release_month_box_office_genre.html %}
 
 OMG ! That one is even better
