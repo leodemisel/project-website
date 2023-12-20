@@ -186,7 +186,7 @@ x = indicator variable for whether the data corresponds to the month we are rese
 | Release year     | The year when the movie was released              |
 | Genre            | The genre of the movie                 |
 
-For a given month, each country will have a control group and a treatment group that will be similar on every variable expect for whether the movies were released that particular month. For the countries that didn't produce enough movies to perform that stasticial analysis, we simply define the effect size (value of coefficient) as the variation of the mean between the two groups, and the P-value as 1 (i.e. not statistically significant). 
+For a given month, each country will have a control group and a treatment group that will be similar on every variable expect for whether the movies were released that particular month. For the countries that didn't produce enough movies to perform that stasticial analysis, we simply define the effect size (value of coefficient beta_1) as the variation of the mean between the two groups, and the P-value as 1 (i.e. not statistically significant). 
 
 {% include release_month_box_office.html %}
 
