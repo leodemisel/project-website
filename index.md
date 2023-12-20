@@ -297,7 +297,9 @@ In conclusion, if it's October to December, to nab an Oscar, stage a drama ! If 
 
 ## Conclusion
 
-![A great image](/assets/img/causaldiag.png){:width="300px"}
+<div style="text-align:center">
+  <img src="/assets/img/causaldiag.png" alt="A great image" width="500px" />
+</div>
 
 With our analysis done we can now assess what
 
