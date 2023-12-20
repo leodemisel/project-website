@@ -297,7 +297,7 @@ In conclusion, if it's October to December, to nab an Oscar, stage a drama ! If 
 
 ## Conclusion
 
-![A great image](/assets/img/causaldiag.png)
+![A great image](/assets/img/causaldiag.png){:width="300px"}
 
 With our analysis done we can now assess what
 
