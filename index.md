@@ -188,7 +188,7 @@ x = indicator variable for whether the data corresponds to the month we are rese
 
 For a given month, each country will have a control group and a treatment group that will be similar on every variable expect for whether the movies were released that particular month. For the countries that didn't produce enough movies to perform that stasticial analysis, we simply define the effect size (value of coefficient beta_1) as the variation of the mean between the two groups, and the P-value as 1 (i.e. not statistically significant). 
 
-Comprehensive Monthly Analysis
+### Comprehensive Monthly Analysis
 Due to limited data availability, our analysis primarily focuses on six countries with substantial datasets—namely, the US, UK, Germany, France, Canada, and Korea—each boasting over 200 data points. By setting the confidence rate at 95%, we aim to figure out significant patterns and insights. The visual representation below reveals that only a few data points exhibit significant effect_sizes (beta_1) across countries and months, offering valuable insights.
 In June, both the US and Germany showcased significant positive effect_sizes, supporting our initial hypothesis that June is an optimal release month. However, the landscape shifts in July, where only France registers significant effect sizes, interestingly turning towards the negative. This violates our original assumption.
 During January, February, and October, the US stands out with significant negative effect sizes, challenging the assumption that releasing a movie at the end of summer or winter is good. It differs from the implications in the "Rough Analysis" regression graph, which suggested positive outcomes for summer and winter releases.
@@ -197,6 +197,8 @@ What makes things complex is that the UK presented significant effect sizes in A
 {% include release_month_box_office.html %}
 
 Wow, have you seen that graph ? it's amazing. 
+
+### Comprehensive Genre Analysis
 
 {% include release_month_box_office_genre.html %}
 
