@@ -353,7 +353,7 @@ In conclusion, if it's October to December, to nab an Oscar, stage a drama ! If 
 ## Conclusion
 
 <p align="center">
-  <img src="/assets/img/causaldiag.png" width="500px" />
+  <img src="assets/img/causaldiag.png" width="500px" />
 </p>
 
 With our story coming to an end, it wouldn’t be applied data analysis without some causal diagrams, so let’s now explore what relations we can draw from our study between the different variables that go into releasing a movie. At the highest level, the Genre and Country of origin of a movie are intrinsic characteristics. 
