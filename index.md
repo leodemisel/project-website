@@ -98,10 +98,10 @@ Note the value of the bars is the coefficient value of <math><mi>&#x03B2;</mi><s
 When we move the animation frame, we will do the regression using the data from year 1914 to the year of the animation button.
 
 ### Identifying the Best Month
-After conducting regression for all 87 countries from 1897 to 2012, we can see that June consistently yields a significantly higher average Box Office compared to other months. 
+After conducting regression for all 87 countries from 1897 to 2012, we can see that June consistently yields a higher average Box Office compared to other months. In this part, we only try to get some intuition about the relationship between the box office and release month, so we only consider whether the coefficient is significant in the next section. 
 
 
-Have June and July consistently been the optimal release month across history ? The answer is 'NO.' By conducting regression analysis across 87 countries from 1914 to 1938, we observe that December emerges as the most successful release month during this period. As we extend the time interval to 1980, the coefficient for June gradually increases, eventually surpassing that of December. However, it is worth noting that December-released movies maintained dominance as the highest box office movies in the year for a long time.
+Have June and July consistently been the optimal release months across history? The answer is 'NO.' By conducting regression analysis across 87 countries from 1914 to 1938, we observe that December emerges as the most successful release month during this period. As we extend the time interval to 1980, the coefficient for June gradually increases, eventually surpassing that of December. However, it is worth noting that December-released movies maintained dominance as the highest box office movies in the year for a long time.
 Further extending the analysis beyond 1980 reveals that the coefficients for May and July generally surpass those of December. Nevertheless, it remains evident that movies released in December consistently achieve higher box office success compared to those released in most other months.
 
 
