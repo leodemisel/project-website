@@ -102,7 +102,20 @@ $X$ = Dummies variable of release month (Note: here we use December as a benchma
 {% include month_wen.html %}
 
 ### Instructions of the dynamic model above
-The value of blue bars is the coefficient value of $\beta_0,\beta_1,\beta_2,...\beta_{11}$, which is referred to the left-sided y-axis.\
+The value of blue bars is the coefficient value of <math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>&#x03B2;</mi>
+  <sub>0</sub>
+  <mo>,</mo>
+  <mi>&#x03B2;</mi>
+  <sub>1</sub>
+  <mo>,</mo>
+  <mi>&#x03B2;</mi>
+  <sub>2</sub>
+  <mo>,</mo>
+  <mo>&#x2026;</mo>
+  <mi>&#x03B2;</mi>
+  <sub>11</sub>
+</math>, which is referred to the left-sided y-axis.\
 The value of orange points is the t-value each of corresponding coefficient, which is referred to the right-sided y-axis.\
 The value of red line (1.96) is used to check the significant of the coefficient under 95% confidence, which is referred to the right-sided y-axis. (e.g. if the t-value stay outside the interval [-1.96,1.96], then the corresponding coefficient is significant)
 
