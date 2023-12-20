@@ -206,7 +206,8 @@ In this section, we'll explore how different movie genres are affected by monthl
 
 {% include release_month_box_office_genre.html %}
 
-OMG ! That one is even better
+### Comprehensive Weekdays Analysis
+Ignoring the importance, we notice that effect sizes are positive on Monday, Tuesday, and Wednesday but negative on Friday and Saturday for most countries. Unfortunately, only four bubbles stand out as significant at a 95% confidence level. Among them, three are from the US, indicating that releasing on Monday and Wednesday would be beneficial, while Friday releases might hurt the box office. The fourth significant bubble suggests that releasing on Wednesday in the UK could boost the box office on average. It's worth noting that two significant bubbles align with the initial observation that Wednesday could be a favorable release day.
 
 
 {% include release_weekday_box_office.html %}
