@@ -156,9 +156,7 @@ Our regression analysis, focusing on the relationship between box office perform
 Now, with the idea that releasing movies on summer and winter vacation might raise higher box office revenue, it is good to go deeper and find some causal links. In this section, we will split the data by country and research them separately. For a specific country, we will research the regression on a specific month. 
 
 ### Methodology
-
-### Methodology
-We will make an example to clarify the method we use. Suppose we research the data for the US in January. Firstly, we will get the data only for the US and split it into two groups. One is in January, and the other group is for all other months except January. Then we matched the groups "January" and " Other " so they have the same size. Then, we will do the regression below. 
+We will make an example to clarify the method we use. Suppose we research the data for the US in January. Firstly, we will get the data only for the US and split it into two groups. One is in January (control group), and the treatment group is for all other months except January. Then, we matched the control and treatment groups to be the same size. Finally, we will do the regression below. 
 
 <!DOCTYPE html>
 <html lang="en">
