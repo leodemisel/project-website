@@ -145,8 +145,8 @@ When we move the animation frame, we will do the regression using the data from 
 {% include week_wen.html %}
 
 
-### Identifying the Best Week
-In our investigation into weekly trends, we designate week 52 as our benchmark and conduct regression analysis using dummy variables for weeks across 87 countries from 1897 to 2012. The exciting thing is that weeks 20, 21, and 23-30 consistently exhibit higher box office figures than other weeks, indicating an upward trend on average. Notably, weeks 23-26 align with June, and weeks 27-31 correspond to July.
+#### Identifying the Best Week
+In our investigation into weekly trends, we designate week 53 as our benchmark and conduct regression analysis using dummy variables for weeks across 87 countries from 1897 to 2012. The exciting thing is that weeks 20, 21, and 23-30 consistently exhibit higher box office figures than other weeks, indicating an upward trend on average. Notably, weeks 23-26 align with June, and weeks 27-31 correspond to July.
 Weeks 46, 47, and 50 also perform well, coinciding with November and December midpoints, respectively.
 Our regression analysis, focusing on the relationship between box office performance and weeks, reinforces our initial assumption and reflects the trends observed in our monthly analysis. It reaffirms that summer is the premier release period for maximizing box office earnings, while winter is the second-best option.
 
