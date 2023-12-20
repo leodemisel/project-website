@@ -153,7 +153,31 @@ Our regression analysis, focusing on the relationship between box office perform
 
 ## Box office analysis
 
-Now that we have an idea of the correlations between release month and box office, let's go deeper and try to find some causal links. To begin, we seperate the movies countries per country of production, and perform a propensity score matching on each country and for each month. The matching covariates will be the following,
+Now, with the idea that releasing movies on summer and winter vacation might raise higher box office revenue, it is good to go deeper and find some causal links. In this section, we will split the data by country and research them separately. For a specific country, we will research the regression on a specific month. 
+
+### Methodology
+We run the regression below:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <title>MathJax Example</title>
+</head>
+<body>
+
+\[ Y = \beta_0 + \beta_1 x \]
+
+</body>
+</html>
+Y = Box office \
+x = indicator variable for whether the data corresponds to the month we are researching. 
+
+
+
 
 | Relevant Covariate        | Description                                      |
 |------------------|--------------------------------------------------|
