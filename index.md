@@ -19,10 +19,6 @@ a couple of questions.
 
 ---
 
-
-
-![A great image](/assets/img/n_movie_per_day.png)
-
 ## When are movies released ?
 
 Now we are going to figure out when movies are currently being released in different timeframes and try to highlight particular trends of interest. Here is then a world map showing the mean movie release rate of each country between 1950 and 2011 across the week, month and year. This ‘release rate’ variable was computed by looking at what percentage of a country’s yearly releases is released each timepoint and standardizing this data within each country between 0 and 1. Keep in mind these values are entirely relative to each country, you can see the actual number of movies released by hovering over the country.
