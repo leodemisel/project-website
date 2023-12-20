@@ -93,10 +93,8 @@ X = Dummies variable of release month (Note: here we use December as a benchmark
 
 {% include month_wen.html %}
 
-### Instructions of the dynamic model above
-The value of blue bars is the coefficient value of <math><mi>&#x03B2;</mi><sub>0</sub><mo>,</mo><mi>&#x03B2;</mi><sub>1</sub><mo>,</mo><mi>&#x03B2;</mi><sub>2</sub><mo>,</mo><mo>&#x2026;</mo><mi>&#x03B2;</mi><sub>11</sub></math>, which is referred to the left-sided y-axis.\
-The value of orange points is the t-value each of corresponding coefficient, which is referred to the right-sided y-axis.\
-The value of red line (1.96) is used to check the significant of the coefficient under 95% confidence, which is referred to the right-sided y-axis. (e.g. if the t-value stay outside the interval [-1.96,1.96], then the corresponding coefficient is significant)
+
+Note the value of the bars is the coefficient value of <math><mi>&#x03B2;</mi><sub>0</sub><mo>,</mo><mi>&#x03B2;</mi><sub>1</sub><mo>,</mo><mi>&#x03B2;</mi><sub>2</sub><mo>,</mo><mo>&#x2026;</mo><mi>&#x03B2;</mi><sub>11</sub></math>\
 
 ### Identifying the Best Month
 After conducting regression for all 87 countries from 1897 to 2012, we can see that June consistently yields a significantly higher average Box Office compared to other months. This pattern persists when we perform the same analysis for countries with over 200 data points during the same period. However, the best month seems to vary according to country; for the US and Germany, it's still June, but for the UK and France, it is July. Notably, the coefficients for Canada and Korea aren't significant, suggesting they don't offer valuable insights.
