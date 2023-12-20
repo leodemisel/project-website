@@ -100,7 +100,7 @@ $X$ = Dummies variable of release month (Note: here we use December as a benchma
 </body>
 </html>
 
-
+{% include math_regression_wen.html %}
 
 {% include month_wen.html %}
 
