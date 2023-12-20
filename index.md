@@ -109,7 +109,7 @@ Despite genre-specific variations, the overarching trend remains unchanged: Summ
 Further refining our analysis, we attempt to pinpoint the optimal week within a given month.
 
 {% include week_wen.html %}
-{% animated_graph.html %}
+{% include animated_graph.html %}
 
 ### Identifying the Best Week
 In our investigation into weekly trends, we designate week 52 as our benchmark and conduct regression analysis using dummy variables for weeks across 87 countries from 1897 to 2012. The exciting thing is that weeks 20, 21, and 23-30 consistently exhibit higher box office figures than other weeks, indicating an upward trend on average. Notably, weeks 23-26 align with June, and weeks 27-31 correspond to July.
