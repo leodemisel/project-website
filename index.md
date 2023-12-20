@@ -125,7 +125,7 @@ Similar to the regression of month, we regress the box office on the dummies var
 </head>
 <body>
 
-\[ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_{11} x_{52} \]
+\[ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_{52} x_{52} \]
 
 </body>
 </html>
@@ -190,15 +190,15 @@ For a given month, each country will have a control group and a treatment group 
 
 ### Comprehensive Monthly Analysis
 Due to limited data availability, our analysis primarily focuses on six countries with substantial datasets—namely, the US, UK, Germany, France, Canada, and Korea—each boasting over 200 data points. By setting the confidence rate at 95%, we aim to figure out significant patterns and insights. The visual representation below reveals that only a few data points exhibit significant effect_sizes (beta_1) across countries and months, offering valuable insights.
-In June, both the US and Germany showcased significant positive effect_sizes, supporting our initial hypothesis that June is an optimal release month. However, the landscape shifts in July, where only France registers significant effect sizes, interestingly turning towards the negative. This violates our original assumption.
-During January, February, and October, the US stands out with significant negative effect sizes, challenging the assumption that releasing a movie at the end of summer or winter is good. It differs from the implications in the "Rough Analysis" regression graph, which suggested positive outcomes for summer and winter releases.
-What makes things complex is that the UK presented significant effect sizes in April. Notably, Canada and Korea seem to not "attend" in this particular analysis. \
 
-Through the above analysis, we cannot draw a clear conclusion, but there is a high probability that releasing the movie in June in the US will be beneficial for the box office.
 
 {% include release_month_box_office.html %}
 
-Wow, have you seen that graph ? it's amazing. 
+In June, both the US and Germany showcased significant positive effect_sizes, supporting our initial hypothesis that June is an optimal release month. However, the landscape shifts in July, where only France registers significant effect sizes, interestingly turning towards the negative. This violates our original assumption.
+During January, February, and October, the US stands out with significant negative effect sizes, challenging the assumption that releasing a movie at the end of summer or winter is good. It differs from the implications in the "Rough Analysis" regression graph, which suggested positive outcomes for summer and winter releases.
+What makes things complex is that the UK presented significant effect sizes in April. Notably, Canada and Korea seem to not "attend" in this particular analysis. 
+
+Through the above analysis, we cannot draw a clear conclusion. However we can observe that the US released more movies than the other countries in all of the months, which indicates that the data of the US is more persuasive. We confident to conclude there is a high probability that releasing the movie in June in the US will be beneficial for the box office.
 
 ### Comprehensive Genre Analysis
 
