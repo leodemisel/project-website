@@ -299,7 +299,11 @@ To finish this chapter, we look at the same figure with movies that are not dram
 
 In conclusion, if it's October to December, to nab an Oscar, stage a drama ! If it's the beginning of the year, release nADA !
 
+## Conclusion
 
+![A great image](/assets/img/causaldiag.png)
+
+With our analysis done we can now assess what
 
 
 
