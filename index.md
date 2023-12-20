@@ -59,7 +59,11 @@ Now we are going to figure out when movies are currently being released in diffe
   });
 </script>
 
-One immediate trend that is noticeable is that a lot of country’s maximum rate of release seem to take place around the 35th week of the year which corresponds to the end of august and beginning of september. There also seems to be a smaller peak the 20th week which corresponds to mid-May. Before jumping to any conclusion we’d like to see if there’s an actual statistical relevance to these observations. To this end we performed a PCA analysis of movie releases across the years and plotted the projected movie releases using four principal components. This process highlights mutual variations between each year so in this graph each plot corresponds to a plot between 1950 and 2011.
+Let’s first take a look at weekdays. Each of us coming from different countries, we were surprised that the usual weekday when movies tend to come out in our country is not an international standard, this is very clearly illustrated on the map. As we can see, most of the world releases their movies on Fridays and Thursdays. These choices are pretty easy to understand; end of the work week dates and outings make people more susceptible to go to the movies and studios can then capitalize on a full opening weekend which is a critical metric of a movie’s success. However there are still some oddballs in the mix. For example, Japan seems to prefer Saturdays to release movies, which considering the importance of the opening weekend doesn’t initially seem to be the best choice. Similarly, France and the Philippines opt for Wednesdays, a decision that may initially appear unconventional. An important thing to consider is that local strategies of movie releases during the week are heavily dependent on local culture and habits. Unlike many Western countries where school days conclude around 3 pm consistently, French students often finish between 4 and 6 pm on weekdays, with Wednesdays ending at noon. The midweek break gives students their whole Wednesday afternoon off, making it a favorable choice for movie releases compared to friday.
+
+Regarding release dates within a month, it is truly shocking to see how many more movies come out the first day of the month compared to the rest, so shocking that it becomes suspicious. After some analysis it becomes clear that this is due to faulty data. Our theory is that when inputting the release date of a movie, if the only data available is the month of release people will sometime put the first day of that month as a default. The only actual relevant thing that seems to stand out are mid-month releases in Asia but aside from that since vacations and availability of the public can change from one month to another, there shouldn’t be any particular strategy that can be highlighted regarding months as a whole.
+
+Now let's look at releases within a year. One immediate trend that is noticeable is that a lot of country’s maximum rate of release seem to take place around the 35th week of the year which corresponds to the end of august and beginning of september. There also seems to be a smaller peak the 20th week which corresponds to mid-May. Before jumping to any conclusion we’d like to see if there’s an actual statistical relevance to these observations. To this end we performed a PCA analysis of movie releases across the years and plotted the projected movie releases using four principal components. This process highlights mutual variations between each year so in this graph each plot corresponds to a plot between 1950 and 2011.
 
 ![A great image](/assets/img/movie_release_PCA.png)
 
@@ -68,13 +72,11 @@ As we can see this analysis validates our initial observation. There is an initi
 ## Best Release date analysis
 
 
-In this part, we're trying to figure out the ideal release date for movies that ensure the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
+In this part, we're trying to figure out the ideal release date for movies that guarantee the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
 
-Our primary method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
+Our main method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
 
 $$ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_{11} x_{11} $$
-
-
 
 Y = Box office \
 X = Dummies variable of release month (Note: here we use December as a benchmark)
@@ -89,22 +91,22 @@ The value of orange points is the t-value each of corresponding coefficient, whi
 The value of red line (1.96) is used to check the significant of the coefficient under 95% confidence, which is referred to the right-sided y-axis. (e.g. if the t-value stay outside the interval [-1.96,1.96], then the corresponding coefficient is significant)
 
 ### Identifying the Best Month
-After conducting regression for all 87 countries from 1897 to 2012, we observed that June consistently yields a significantly higher average Box Office compared to other months. This pattern persists when we perform the same analysis for countries with over 200 data points during the same period. However, the best month varies for specific countries; for the US and Germany, it's still June, but for the UK and France, it is July. Notably, the coefficients for Canada and Korea aren't significant, suggesting they don't offer valuable insights.
+After conducting regression for all 87 countries from 1897 to 2012, we can see that June consistently yields a significantly higher average Box Office compared to other months. This pattern persists when we perform the same analysis for countries with over 200 data points during the same period. However, the best month seems to vary according to country; for the US and Germany, it's still June, but for the UK and France, it is July. Notably, the coefficients for Canada and Korea aren't significant, suggesting they don't offer valuable insights.
 Our initial assumption is that June and July are generally the best release months for generating higher box office returns.
 
 
-Is June or July consistently the optimal release month? The answer is 'NO.' By conducting regression analysis across 87 countries from 1914 to 1938, we observe that December emerges as the most successful release month during this period. As we extend the time interval to 1980, the coefficient for June gradually increases, eventually surpassing that of December. However, it is worth noting that December-released movies maintained dominance at the highest box office for a long time.
-Further extending the analysis beyond 1980 reveals that the coefficients for May and July generally surpass that of December. Nevertheless, it remains evident that movies released in December consistently achieve higher box office success compared to those released in most other months.
+Have June and July consistently been the optimal release month across history ? The answer is 'NO.' By conducting regression analysis across 87 countries from 1914 to 1938, we observe that December emerges as the most successful release month during this period. As we extend the time interval to 1980, the coefficient for June gradually increases, eventually surpassing that of December. However, it is worth noting that December-released movies maintained dominance as the highest box office movies in the year for a long time.
+Further extending the analysis beyond 1980 reveals that the coefficients for May and July generally surpass those of December. Nevertheless, it remains evident that movies released in December consistently achieve higher box office success compared to those released in most other months.
 
 
 ### History events analysis
-In this section, our analysis consistently encompasses data from all 87 countries. Notably, from 1914 to 1918, during World War I, the data available for analysis was limited. Then, we transferred our focus from 1929 to 1933, coinciding with the Great Depression. Here, our regression analysis reveals that November claims the crown for the best release month, with January as the second best. This suggests that during economic downturns, months preceding and following Christmas tend to yield better performance than other months.
+In this section, our analysis consistently encompasses data from all 87 countries. Notably, from 1914 to 1918, during World War I, the data available for analysis was limited. We then moved our focus on the 1929 to 1933 period, coinciding with the Great Depression. Here, our regression analysis reveals that November claims the crown for the best release month, with January as the second best. This suggests that during economic downturns, months preceding and following Christmas tend to yield better performance than other months.
 Moving on to the period from 1939 to 1945, corresponding to World War II, our analysis indicates that December maintains its status as the preferable release month. However, from 1945 to 1966, a period after the war and the rise of television in the 50s, the coefficient for December is not significantly higher than that of other months.
 Continuing our regression from 1967 to 1976, during the New Hollywood wave of the 60s and 70s, we observe that the June coefficient is close to that of December. This suggests a gradual shift in audience preferences towards the summer release months. Subsequently, we observe that high box office performers tend to concentrate predominantly on the summer and winter seasons.
 
 
 ### Genre-Specific Analysis
-We expand our exploration across various genres, maintaining a comprehensive dataset from all 87 countries and the years 1897 to 2012. Our findings reveal that most genres—drama, comedy, romance, thriller, crime, horror, musical, documentary, and mystery—support our hypothesis that June and July constitute optimal release months. However, certain outliers, such as black-and-white films, diverge from this trend. This deviation could be attributed to their 'old-school' nature, setting them apart from conventional movies. Additionally, action, adventure, and family films attained their highest box office earnings in May, deviating from the prevailing trend.
+We now expand our exploration across various genres, maintaining a comprehensive dataset from all 87 countries and the years 1897 to 2012. Our findings reveal that most genres—drama, comedy, romance, thriller, crime, horror, musical, documentary, and mystery—support our hypothesis that June and July constitute optimal release months. However, certain outliers, such as black-and-white films, diverge from this trend. This deviation could be attributed to their 'old-school' nature, setting them apart from conventional movies. Additionally, action, adventure, and family films attained their highest box office earnings in May, deviating from the prevailing trend.
 Despite genre-specific variations, the overarching trend remains unchanged: Summer (May, June, July) and winter (November, December, January) persist as the most favourable release seasons.
 Further refining our analysis, we attempt to pinpoint the optimal week within a given month.
 
@@ -119,7 +121,7 @@ Our regression analysis, focusing on the relationship between box office perform
 
 ## Box office analysis
 
-Now that we have an idea of the correlations between release month and box office, let's go deeper and try to find some causal link. To begin, we seperate the movies countries per country of production, and perform a propensity score matching on each country and for each month. The matching covariates will be the following,
+Now that we have an idea of the correlations between release month and box office, let's go deeper and try to find some causal links. To begin, we seperate the movies countries per country of production, and perform a propensity score matching on each country and for each month. The matching covariates will be the following,
 
 | Relevant Covariate        | Description                                      |
 |------------------|--------------------------------------------------|
@@ -151,7 +153,7 @@ xoxo
 
 
 
-The choice of release date made by moviemakers are not always based on making money. Sometimes, they are based on prestige, so that they can make a lot of money at a later date. In the movie industry, this prestige is materialized by the ultimate recognition : an Oscar. It is known that the submission deadline to win an Oscar is usually around the end of the year. Furthermore, it is said that the Oscar season, ranging from October to December, is the season where moviemakers release their movies that are the most likely to win an Oscar. In this chapter, we will try to investigate the effect of Oscar season.
+The choices of release date made by studios are not always based on making money. Sometimes, they are based on prestige, so that they can make a lot of money at a later date. In the movie industry, this prestige is materialized by the ultimate recognition : an Oscar. It is known that the submission deadline to win an Oscar is usually around the end of the year. Furthermore, it is said that the Oscar season, ranging from October to December, is the season where moviemakers release their movies that are the most likely to win an Oscar. In this chapter, we will try to investigate the effect of Oscar season.
 
 
 
@@ -166,7 +168,7 @@ As a stater, we will look at the distribution of Oscar over the years.
 
 
 
-As we can see on the above figure, there seem to be a clear trend of more Oscar being won by the end of the year. The trend seems rather consistent over the years, which can be explained by the fact that almost all Oscar ceremonies took place between February and April. It would be simple to say that if a moviemaker wants to win an Oscar, they have to release it between October and December, but let's not be ADAmant about that thought and conduct a deeper analysis. Having observed this supposed effect, the next natural question is : do movies make more Oscars when they are released at the end of the year because that's when the best movies are released ?
+As we can see on the above figure, there seem to be a clear trend of more Oscar being won by movies coming out at the end of the year. The trend seems rather consistent over the years, which can be explained by the fact that almost all Oscar ceremonies took place between February and April. It would be simple to say that if a moviemaker wants to win an Oscar, they would have to release it between October and December, but let's not be ADAmant about that thought and conduct a deeper analysis. Having observed this supposed effect, the next natural question is : do movies have a better chance of winning an Oscar when they are released at the end of the year simply because that's when the best movies are released ?
 
 
 
@@ -191,7 +193,7 @@ To begin our analysis, we start by comparing the effect of releases in all four 
 
 
 
-After doing the matching on those covariates, we will verify that the following covariates are well distributed with a simple standardized mean difference test. We decided not to match on the rating, because it is not a cause of the movie's success, but a consequence of it. However, checking the distribution of the ratings is a good indicator of what the public thought of the movie. Indeed, it is possible that movies released during the Oscar season have the same budget as movies released during other seasons, but with a different kind of storytelling quality. We think that the ratings could be a variable that indicates the work put on the script, as voting people are usually more implicated and will be more critical of bad stories.
+After doing the matching on those covariates, we will verify that the following covariates are well distributed with a simple standardized mean difference test. We decided not to match on the rating, because it is not a cause of the movie's success, but a consequence of it. However, checking the distribution of the ratings is a good indicator of the movie's public perception. Indeed, it is possible that movies released during the Oscar season have the same budget as movies released during other seasons, but with a different kind of storytelling quality. We think that the ratings could be a variable that indicates the work put on the script, as terminally online movie critics are usually more deeply involved and will be more critical of bad stories.
 
 
 
@@ -270,10 +272,10 @@ But is it true for every genre ? To figure it out, we analyze each genre separat
 {% include kmeans_per_genre.html %}
 
 
-As we can see, the movies that are drama seem to contain most of the effects observed in the previous figures. The effect size of releasing a dramatic movie at the end of the year as well as at the beginning of the year is enormous.
+As we can see, dramas seem to contain most of the effects observed in the previous figures. The effect size of releasing a drama movie at the end of the year as well as at the beginning of the year is enormous.
 
 
-To finish this chapter, we look at the same figure with movies that are not drama. Surprisingly, there is no effect of releasing on the last cluster. The only cluster that has an impact is the second one, with a negative correlation.
+To finish this chapter, we look at the same figure with movies that are not dramas. Surprisingly, there is no effect of releasing on the last cluster. The only cluster that has an impact is the second one, with a negative correlation.
 
 
 {% include kmeans_clusters_notDrama.html %}
