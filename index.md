@@ -88,19 +88,16 @@ Our main method is regression analysis, examining if there's a connection betwee
 </head>
 <body>
 
-<p>Here is your equation:</p>
-
 \[ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_{11} x_{11} \]
+
+</body>
+</html>
+
 
 
 $Y$ = Box office \
 $X$ = Dummies variable of release month (Note: here we use December as a benchmark)
 
-
-</body>
-</html>
-
-{% include math_regression_wen.html %}
 
 {% include month_wen.html %}
 
