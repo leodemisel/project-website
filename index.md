@@ -352,11 +352,22 @@ In conclusion, if it's October to December, to nab an Oscar, stage a drama ! If 
 
 ## Conclusion
 
-<div style="text-align:center">
+<p align="center">
   <img src="/assets/img/causaldiag.png" width="500px" />
-</div>
+</p>
 
-With our analysis done we can now assess what
+With our story coming to an end, it wouldn’t be applied data analysis without some causal diagrams, so let’s now explore what relations we can draw from our study between the different variables that go into releasing a movie. At the highest level, the Genre and Country of origin of a movie are intrinsic characteristics. 
+The Country of origin will mainly have a causal influence on the release date of the movie, whether it’s within a week, a month or a year. These influences are generally mediated by local culture and habits; different work weeks, vacations and seasons will have a direct impact on the release date of a movie. The Country variable also has a direct influence on the Oscar chances but this is due to the Oscars being an American ceremony. In a nutshell, if the movie is not english, it has less chances of winning an Oscar. 
+
+Regarding the Genre we were only able to see a small influence on the release date within a year, for example horror movies will more consistently come out around october from year to year. However Genre does have a big impact on box office and ratings, however this influence was expected since the cinematic quality and public hype of a movie are closely tied to its Genre. For example, while a big superhero action movie will most surely kill it at the box office (this becomes less and less true with each passing day) it won’t necessarily be critically acclaimed and vice-versa for an indie 3 hour long drama cinematic masterpiece.
+Now regarding release dates. Unsurprisingly, the release date within a month has no effects. Months are not really a repeating equal timeframe like a week or a year so it makes sense that there wouldn’t be any particular day that’s common to every month. However we see that the weekday of release does have an influence on the box office. That is because the opening week and weekend of a movie are critical in its overall success. A poor opening week will lead theaters and promoters to drop the movie making it even less likely to do well in the long run. And finally, the release date within a year has a clear impact not only on the box office thanks to periods like the blockbuster season, but surprisingly, as we saw in our in-depth oscar analysis, it also impacts the movie’s chances of winning an oscar. Typically, the later in the year a movie is released, the higher the chances of it being considered for an Oscar. 
+
+And so finally, here we are, the million dollar question: when should you release a movie ? It depends. Many of our initial assumptions about the influence of time are either marginal or dependent on various different factors so there isn’t a clear and concise way to know when is the best time to release a movie. However there are still some factors which can help you out if money and fame are within your goals:
+If you want better chances to win an Oscar, your movie should come out in the last quarter of the year and should be a drama. 
+The blockbuster season is real folks and will very much give you an advantage in the box office.
+Weekday choice should depend on the specifics of each country however we know that movies coming out on monday and wednesday tend to fare better at the box office.
+Make a good movie (presumably).
+
 
 
 
