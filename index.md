@@ -104,16 +104,7 @@ Has June consistently been the optimal release month across history? The answer 
 Further extending the analysis beyond 1980 reveals that the coefficients for May and July generally surpass those of December. Nevertheless, it remains evident that movies released in December consistently achieve higher box office success compared to those released in most other months.
 
 
-### History events analysis
-In this section, our analysis consistently encompasses data from all 87 countries. Notably, from 1914 to 1918, during World War I, the data available for analysis was limited. We then moved our focus on the 1929 to 1933 period, coinciding with the Great Depression. Here, our regression analysis reveals that November claims the crown for the best release month, with January as the second best. This suggests that during economic downturns, months preceding and following Christmas tend to yield better performance than other months.
-Moving on to the period from 1939 to 1945, corresponding to World War II, our analysis indicates that December maintains its status as the preferable release month. However, from 1945 to 1966, a period after the war and the rise of television in the 50s, the coefficient for December is not significantly higher than that of other months.
-Continuing our regression from 1967 to 1976, during the New Hollywood wave of the 60s and 70s, we observe that the June coefficient is close to that of December. This suggests a gradual shift in audience preferences towards the summer release months. Subsequently, we observe that high box office performers tend to concentrate predominantly on the summer and winter seasons.
 
-
-### Genre-Specific Analysis
-We now expand our exploration across various genres, maintaining a comprehensive dataset from all 87 countries and the years 1897 to 2012. Our findings reveal that most genres—drama, comedy, romance, thriller, crime, horror, musical, documentary, and mystery—support our hypothesis that June and July constitute optimal release months. However, certain outliers, such as black-and-white films, diverge from this trend. This deviation could be attributed to their 'old-school' nature, setting them apart from conventional movies. Additionally, action, adventure, and family films attained their highest box office earnings in May, deviating from the prevailing trend.
-Despite genre-specific variations, the overarching trend remains unchanged: Summer (May, June, July) and winter (November, December, January) persist as the most favourable release seasons.
-Further refining our analysis, we attempt to pinpoint the optimal week within a given month.
 
 {% include week_wen.html %}
 
