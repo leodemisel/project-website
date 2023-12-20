@@ -216,6 +216,8 @@ From the picture below, we can see our data mainly come from the US, the UK, Fra
 
 {% include release_week_box_office.html %}
 
+In conclusion, releasing a movie on Wednesday or June would be better for the box office than on other weekdays and months in the US. In addition, we have lots of evidence indicating that Wednesday and June are the best weekdays and months for most countries from the three comprehensive analyses above.
+
 
 ## Oscar analysis
 
