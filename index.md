@@ -80,7 +80,10 @@ $$ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_{11} x_{11} $$
 
 Y = Box office \
 X = Dummies variable of release month (Note: here we use December as a benchmark)
-$\sqrt{3x-1}+(1+x)^2$
+
+<math>
+	H(s) = ∫<sub>0</sub><sup>∞</sup> e<sup>-st</sup> h(t) dt
+</math>
 
 
 {% include month_wen.html %}
