@@ -66,7 +66,12 @@ As we can see this analysis validates our initial observation. There is an initi
 
 In this part, we're trying to figure out the ideal release date for movies that guarantee the best performance at the box office. Our analysis covers data spanning from 1897 to 2012 across 87 countries.
 
-Our main method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use is:
+
+
+
+### Rough Month analysis
+
+Our main method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use for monthly analysis is:
 
 <!DOCTYPE html>
 <html lang="en">
@@ -93,17 +98,48 @@ X = Dummies variable of release month (Note: here we use December as a benchmark
 
 {% include month_wen.html %}
 
-### Introduction of the plot
+#### Introduction of the plot
 Note the value of the bars is the coefficient value of <math><mi>&#x03B2;</mi><sub>0</sub><mo>,</mo><mi>&#x03B2;</mi><sub>1</sub><mo>,</mo><mi>&#x03B2;</mi><sub>2</sub><mo>,</mo><mo>&#x2026;</mo><mi>&#x03B2;</mi><sub>11</sub></math>\
-When we move the animation frame, we will do the regression using the data from the year 1914 to the year of the animation button.
+When we move the animation frame, we will do the regression using the data from 1914 to the year of the animation button.
 
-### Identifying the Best Month
+#### Identifying the Best Month
 In this part, we only try to get some intuition about the relationship between the box office and release month, so we only consider whether the coefficient is significant in the next section. After conducting regression for all 87 countries from 1897 to 2012, we can see that June consistently yields a higher average Box Office compared to other months. Our initial assumption is that June is generally the best release month for generating higher box office returns.
 
 Has June consistently been the optimal release month across history? The answer is 'NO.' By conducting regression analysis across 87 countries from 1914 to 1938, we observe that December emerges as the most successful release month during this period. As we extend the time interval to 1980, the coefficient for June gradually increases, eventually surpassing that of December. However, it is worth noting that December-released movies maintained dominance as the highest box office movies in the year for a long time.
 Further extending the analysis beyond 1980 reveals that the coefficients for May and July generally surpass those of December. Nevertheless, it remains evident that movies released in December consistently achieve higher box office success compared to those released in most other months.
 
 
+### Rough Week analysis
+
+Similar to the regression of month, we regress the box office on the dummies variable of weeks day.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+  <title>MathJax Example</title>
+</head>
+<body>
+
+\[ Y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_{11} x_{52} \]
+
+</body>
+</html>
+
+
+
+Y = Box office \
+X = Dummies variable of release week (Note: here we use week 53 as a benchmark)
+
+{% include week_wen.html %}
+
+#### Introduction of the plot
+Note the value of the bars is the coefficient value of <math><mi>&#x03B2;</mi><sub>0</sub><mo>,</mo><mi>&#x03B2;</mi><sub>1</sub><mo>,</mo><mi>&#x03B2;</mi><sub>2</sub><mo>,</mo><mo>&#x2026;</mo><mi>&#x03B2;</mi><sub>52</sub></math>\
+When we move the animation frame, we will do the regression using the data from 1914 to the year of the animation button.
 
 
 {% include week_wen.html %}
