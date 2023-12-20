@@ -95,8 +95,8 @@ Our main method is regression analysis, examining if there's a connection betwee
 
 
 
-$Y$ = Box office \
-$X$ = Dummies variable of release month (Note: here we use December as a benchmark)
+Y = Box office \
+X = Dummies variable of release month (Note: here we use December as a benchmark)
 
 
 {% include month_wen.html %}
