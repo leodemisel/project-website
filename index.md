@@ -21,6 +21,12 @@ a couple of questions.
 
 
 
+![A great image](/assets/img/n_movie_per_day.png)
+
+## When are movies released ?
+
+Now we are going to figure out when movies are currently being released in different timeframes and try to highlight particular trends of interest. Here is then a world map showing the mean movie release rate of each country between 1950 and 2011 across the week, month and year. This ‘release rate’ variable was computed by looking at what percentage of a country’s yearly releases is released each timepoint and standardizing this data within each country between 0 and 1. Keep in mind these values are entirely relative to each country, you can see the actual number of movies released by hovering over the country.
+
 <select id="chartType">
   <option value="year">Year</option>
   <option value="month">Month</option>
@@ -52,17 +58,6 @@ a couple of questions.
     showFrame(this.value)
   });
 </script>
-
-
-
-
-![A great image](/assets/img/n_movie_per_day.png)
-
-## When are movies released ?
-
-Now we are going to figure out when movies are currently being released in the year and try to highlight particular trends of interest. Here is then a world map showing the mean weekly movie release rate of each country between 1950 and 2011 across the year. This ‘release rate’ variable was computed by looking at what percentage of a country’s yearly releases is released each week and standardizing this data within each country between 0 and 1. Keep in mind these values are entirely relative to each country, you can see the actual number of movies by hovering over the country.
-
-{% include movie_world_map.html %}
 
 One immediate trend that is noticeable is that a lot of country’s maximum rate of release seem to take place around the 35th week of the year which corresponds to the end of august and beginning of september. There also seems to be a smaller peak the 20th week which corresponds to mid-May. Before jumping to any conclusion we’d like to see if there’s an actual statistical relevance to these observations. To this end we performed a PCA analysis of movie releases across the years and plotted the projected movie releases using four principal components. This process highlights mutual variations between each year so in this graph each plot corresponds to a plot between 1950 and 2011.
 
