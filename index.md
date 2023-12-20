@@ -212,11 +212,10 @@ Ignoring the importance, we notice that effect sizes are positive on Monday, Tue
 
 {% include release_weekday_box_office.html %}
 
-Oh no he didn't....
+From the picture below, we can see our data mainly come from the US, the UK, France, India and Japan. And they prefer to release the movie around weeks 20 and 36. But from our "Rough Analysis", it would not have a comparative high box office on average around weeks 20 and 36.
 
 {% include release_week_box_office.html %}
 
-xoxo
 
 ## Oscar analysis
 
