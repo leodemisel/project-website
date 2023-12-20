@@ -24,15 +24,11 @@ a couple of questions.
 Now we are going to figure out when movies are currently being released in different timeframes and try to highlight particular trends of interest. Here is then a world map showing the mean movie release rate of each country between 1950 and 2011 across the week, month and year. This ‘release rate’ variable was computed by looking at what percentage of a country’s yearly releases is released each timepoint and standardizing this data within each country between 0 and 1. Keep in mind these values are entirely relative to each country, you can see the actual number of movies released by hovering over the country.
 
 <select id="chartType">
-  <option value="year">Year</option>
-  <option value="month">Month</option>
   <option value="week">Week</option>
   <option value="day">Day</option>
   <option value="weekday">Weekday</option>
 </select>
 
-<iframe class="toggle-frame" src="assets/plot/movie_world_map_year.html" width="750px" height="530px" frameborder="0" position="relative" id="year" style="display: block;"></iframe>
-<iframe class="toggle-frame" src="assets/plot/movie_world_map_month.html" width="750px" height="530px" frameborder="0" position="relative" id="month" style="display: none;"></iframe>
 <iframe class="toggle-frame" src="assets/plot/movie_world_map_weeks.html" width="750px" height="530px" frameborder="0" position="relative"  id="week" style="display: none;"></iframe>
 <iframe class="toggle-frame" src="assets/plot/movie_world_map_day.html" width="750px" height="530px" frameborder="0" position="relative"  id="day" style="display: none;"></iframe>
 <iframe class="toggle-frame" src="assets/plot/movie_world_map_weekday.html" width="750px" height="530px" frameborder="0" position="relative"  id="weekday" style="display: none;"></iframe>
@@ -63,7 +59,7 @@ Now let's look at releases within a year. One immediate trend that is noticeable
 
 ![A great image](/assets/img/movie_release_PCA.png)
 
-As we can see this analysis validates our initial observation. There is an initial surprise to these results because it is common knowledge that the highest grossing movies are released during the summer, the intuition would be that if a movie wants a high gross it should be released during this blockbuster season. Why then are the weeks with the highest release rates frame the summer season ? Our explanation is that blockbuster movies released during the summer are the highest grossing but also have the biggest budget. Releasing a movie during this period would mean being pit against some of the biggest studios in the world for publicity and theater space. Most studios don’t have this kind of budget, but our theory is that releasing a movie right before or after this period gives the chance of partly benefiting from the increased audience attendance caused by vacations and good weather while not having to go against Warner Bros to have your movie released in theaters. 
+As we can see this analysis validates our initial observation. There is an initial surprise to these results because it is common knowledge that the highest grossing movies are released during the summer, the intuition would be that if a movie wants a high gross it should be released during this blockbuster season. Why then are the weeks with the highest release rates before and after the summer season ? Our explanation is that blockbuster movies released during the summer are the highest grossing but also have the biggest budget. Releasing a movie during this period would mean being pit against some of the biggest studios in the world for publicity and theater space. Most studios don’t have this kind of budget, but our theory is that releasing a movie right before or after this period gives the chance of partly benefiting from the increased audience attendance caused by vacations and good weather while not having to go against Warner Bros to have your movie released in theaters. 
 
 ## Best Release date analysis
 
