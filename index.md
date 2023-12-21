@@ -229,7 +229,7 @@ The choices of release date made by studios are not always based on making money
 
 
 
-As a stater, we will look at the distribution of Oscar over the years.
+First and foremost, we will look at the distribution of Oscar over the years.
 
 
 
