@@ -372,7 +372,9 @@ The blockbuster season is real folks and will very much give you an advantage in
 Weekday choice should depend on the specifics of each country however we know that movies coming out on monday and wednesday tend to fare better at the box office.
 Make a good movie (presumably).
 
+## Ethical considerations
 
+It has rarely been more evident that the movie industry doesn’t shine through its ethical labor practices. For the past year, exhausted and underpaid writers and actors striked to make their voices heard and rights respected. One common grip workers in the industry have with studios is the tight schedule that is forced on the artistic process of movie making. Poor writing, rushed dialogues, unfinished special effects; artists at every level of the process are squeezed by the industry’s infamous time crunches. To get the movie out, whatever its state, for the blockbuster season, the Christmas season, studios make it seem the whole world is going to end if people aren’t able to see the newest Transformers in theaters this summer. We’ve gone through a thorough analysis to determine when is the best time to release a movie, but in reality, the best time is always when the movie is done. Trying to pin-point the precise dates that give studios a marginal increase in profit is the exact kind of greedy attitude that the Screen Actors Guild and the Writers Guild of America are trying to denounce. It puts profit before artistic quality and integrity. However it seems more and more that audiences are tired of paying often more than ten bucks to watch a messy rush-job in theaters. So maybe, for the benefit of audiences, workers and cinema as a whole, it’s best to leave this kind of knowledge out of the studios’ hands.
 
 
 
