@@ -73,7 +73,7 @@ In this part, we're trying to figure out the ideal release date for movies that 
 
 Our main method is regression analysis, examining if there's a connection between the 'release month' and the 'box office' performance. The formula we use for monthly analysis is:
 
-<!DOCTYPE html>
+{% raw %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -89,6 +89,7 @@ Our main method is regression analysis, examining if there's a connection betwee
 
 </body>
 </html>
+{% endraw %}
 
 
 
@@ -113,7 +114,7 @@ Further extending the analysis beyond 1980 reveals that the coefficients for May
 
 Similar to the regression of month, we regress the box office on the dummies variable of weeks day.
 
-<!DOCTYPE html>
+{% raw %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -129,7 +130,7 @@ Similar to the regression of month, we regress the box office on the dummies var
 
 </body>
 </html>
-
+{% endraw %}
 
 
 Y = Box office \
@@ -158,7 +159,7 @@ Now, with the idea that releasing movies on summer and winter vacation might rai
 ### Methodology
 We will make an example to clarify the method we use. Suppose we research the data for the US in January. Firstly, we will get the data only for the US and split it into two groups. One is in January (control group), and the treatment group is for all other months except January. Then, we matched the control and treatment groups to be the same size. Finally, we will do the regression below. 
 
-<!DOCTYPE html>
+{% raw %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -174,6 +175,8 @@ We will make an example to clarify the method we use. Suppose we research the da
 
 </body>
 </html>
+{% endraw %}
+
 Y = Box office \
 x = indicator variable for whether the data corresponds to the month we are researching. 
 
